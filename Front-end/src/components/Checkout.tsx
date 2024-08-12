@@ -15,8 +15,8 @@ import apiClient from '../utils/axios'
 
 function Checkout() {
   const [CartStuff, setCartStuff] = useState<CartTypes[]>([])
-  
-  const {user, setUser} = useUser();
+
+  const { user, setUser } = useUser();
   const navigate = useNavigate();
 
   const handleLogout = async () => {
@@ -70,282 +70,200 @@ function Checkout() {
           <div className="col-md-7">
             <h2 className="text-dark fw-bold mb-4">Kasir</h2>
 
-                <Tab/>
-
-                <div className="row g-3 makanan hidden" id='makanan'>
-                <h1 className="card-title mt-4 mb-2">Makanan</h1>
-                    <div className="col-6 col-lg-4">
-                        <div className="card">
-                            <div className="card-body p-4">
-                                <img src={dish1} className="w-75 d-block mx-auto" alt="Dish 01"></img>
-                                <h4 className="card-title mt-4 mb-2">Cheesey Chicken</h4>
-                                <div
-                                    className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
-                                    <p className="mb-0 text-secondary fs-7">Makanan</p>
-                                    <p className="mb-0 text-primary fw-semibold">Rp. 35,000</p>
-                                </div>
-                                <button className="add-button">ADD</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-6 col-lg-4">
-                        <div className="card">
-                            <div className="card-body p-4">
-                            <img src={dish2} className="w-75 d-block mx-auto" alt="Dish 02"></img>
-                                <h4 className="card-title mt-4 mb-2">Maxi Burger</h4>
-                                <div
-                                    className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
-                                    <p className="mb-0 text-secondary fs-7">Makanan</p>
-                                    <p className="mb-0 text-primary fw-semibold">Rp. 42,000</p>
-                                </div>
-                                <button className="add-button">ADD</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-6 col-lg-4">
-                        <div className="card">
-                            <div className="card-body p-4">
-                            <img src={dish3} className="w-75 d-block mx-auto" alt="Dish 03"></img>
-                                <h4 className="card-title mt-4 mb-2">Double Burger</h4>
-                                <div
-                                    className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
-                                    <p className="mb-0 text-secondary fs-7">Makanan</p>
-                                    <p className="mb-0 text-primary fw-semibold">Rp. 40,000</p>
-                                </div>
-                                <button className="add-button">ADD</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-6 col-lg-4">
-                        <div className="card">
-                            <div className="card-body p-4">
-                            <img src={dish4} className="w-75 d-block mx-auto" alt="Dish 04"></img>
-                                <h4 className="card-title mt-4 mb-2">Raw Marbled Meat Steak</h4>
-                                <div
-                                    className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
-                                    <p className="mb-0 text-secondary fs-7">Makanan</p>
-                                    <p className="mb-0 text-primary fw-semibold">Rp. 34,000</p>
-                                </div>
-                                <button className="add-button">ADD</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-6 col-lg-4">
-                        <div className="card">
-                            <div className="card-body p-4">
-                            <img src={dish5} className="w-75 d-block mx-auto" alt="Dish 05"></img>
-                                <h4 className="card-title mt-4 mb-2">Beef Steak Grill Pan</h4>
-                                <div
-                                    className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
-                                    <p className="mb-0 text-secondary fs-7">Makanan</p>
-                                    <p className="mb-0 text-primary fw-semibold">Rp. 45,000</p>
-                                </div>
-                                <button className="add-button">ADD</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-6 col-lg-4">
-                        <div className="card">
-                            <div className="card-body p-4">
-                            <img src={dish6} className="w-75 d-block mx-auto" alt="Dish 06"></img>
-                                <h4 className="card-title mt-4 mb-2">Double Marbled Meat Steak</h4>
-                                <div
-                                    className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
-                                    <p className="mb-0 text-secondary fs-7">Makanan</p>
-                                    <p className="mb-0 text-primary fw-semibold">Rp. 45,000</p>
-                                </div>
-                                <button className="add-button">ADD</button>
-                            </div>
-                        </div>
+            <Tab />
+            <div className="row g-3 makanan hidden" id='makanan'>
+              <h1 className="card-title mt-4 mb-2">Makanan</h1>
+              <div className="col-6 col-lg-4">
+                <div className="card">
+                  <div className="card-body p-4">
+                    <img src={dish1} className="w-75 d-block mx-auto" alt="Dish 01"></img>
+                    <h4 className="card-title mt-4 mb-2">Cheesey Chicken</h4>
+                    <div
+                      className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
+                      <p className="mb-0 text-secondary fs-7">Makanan</p>
+                      <p className="mb-0 text-primary fw-semibold">Rp. 35,000</p>
                     </div>
                     <button className="add-button">ADD</button>
                   </div>
                 </div>
+              </div>
 
-                <div className="row g-3 minuman hidden" id='minuman'>
-                <h1 className="card-title mt-4 mb-2">Minuman</h1>
-                    <div className="col-6 col-lg-4">
-                        <div className="card">
-                            <div className="card-body p-4">
-                                <img src={dish1} className="w-75 d-block mx-auto" alt="Dish 01"></img>
-                                <h4 className="card-title mt-4 mb-2">Cheesey Chicken</h4>
-                                <div
-                                    className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
-                                    <p className="mb-0 text-secondary fs-7">Makanan</p>
-                                    <p className="mb-0 text-primary fw-semibold">Rp. 35,000</p>
-                                </div>
-                                <button className="add-button">ADD</button>
-                            </div>
-                        </div>
+              <div className="col-6 col-lg-4">
+                <div className="card">
+                  <div className="card-body p-4">
+                    <img src={dish2} className="w-75 d-block mx-auto" alt="Dish 02"></img>
+                    <h4 className="card-title mt-4 mb-2">Maxi Burger</h4>
+                    <div
+                      className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
+                      <p className="mb-0 text-secondary fs-7">Makanan</p>
+                      <p className="mb-0 text-primary fw-semibold">Rp. 42,000</p>
                     </div>
-
-                    <div className="col-6 col-lg-4">
-                        <div className="card">
-                            <div className="card-body p-4">
-                            <img src={dish2} className="w-75 d-block mx-auto" alt="Dish 02"></img>
-                                <h4 className="card-title mt-4 mb-2">Maxi Burger</h4>
-                                <div
-                                    className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
-                                    <p className="mb-0 text-secondary fs-7">Makanan</p>
-                                    <p className="mb-0 text-primary fw-semibold">Rp. 42,000</p>
-                                </div>
-                                <button className="add-button">ADD</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-6 col-lg-4">
-                        <div className="card">
-                            <div className="card-body p-4">
-                            <img src={dish3} className="w-75 d-block mx-auto" alt="Dish 03"></img>
-                                <h4 className="card-title mt-4 mb-2">Double Burger</h4>
-                                <div
-                                    className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
-                                    <p className="mb-0 text-secondary fs-7">Makanan</p>
-                                    <p className="mb-0 text-primary fw-semibold">Rp. 40,000</p>
-                                </div>
-                                <button className="add-button">ADD</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-6 col-lg-4">
-                        <div className="card">
-                            <div className="card-body p-4">
-                            <img src={dish4} className="w-75 d-block mx-auto" alt="Dish 04"></img>
-                                <h4 className="card-title mt-4 mb-2">Raw Marbled Meat Steak</h4>
-                                <div
-                                    className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
-                                    <p className="mb-0 text-secondary fs-7">Makanan</p>
-                                    <p className="mb-0 text-primary fw-semibold">Rp. 34,000</p>
-                                </div>
-                                <button className="add-button">ADD</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-6 col-lg-4">
-                        <div className="card">
-                            <div className="card-body p-4">
-                            <img src={dish5} className="w-75 d-block mx-auto" alt="Dish 05"></img>
-                                <h4 className="card-title mt-4 mb-2">Beef Steak Grill Pan</h4>
-                                <div
-                                    className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
-                                    <p className="mb-0 text-secondary fs-7">Makanan</p>
-                                    <p className="mb-0 text-primary fw-semibold">Rp. 45,000</p>
-                                </div>
-                                <button className="add-button">ADD</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-6 col-lg-4">
-                        <div className="card">
-                            <div className="card-body p-4">
-                            <img src={dish6} className="w-75 d-block mx-auto" alt="Dish 06"></img>
-                                <h4 className="card-title mt-4 mb-2">Double Marbled Meat Steak</h4>
-                                <div
-                                    className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
-                                    <p className="mb-0 text-secondary fs-7">Makanan</p>
-                                    <p className="mb-0 text-primary fw-semibold">Rp. 45,000</p>
-                                </div>
-                                <button className="add-button">ADD</button>
-                            </div>
-                        </div>
-                    </div>
+                    <button className="add-button">ADD</button>
+                  </div>
                 </div>
-
-                <div className="row g-3 snack hidden" id='snack'>
-                <h1 className="card-title mt-4 mb-2">Snack</h1>
-                    <div className="col-6 col-lg-4">
-                        <div className="card">
-                            <div className="card-body p-4">
-                                <img src={dish1} className="w-75 d-block mx-auto" alt="Dish 01"></img>
-                                <h4 className="card-title mt-4 mb-2">Cheesey Chicken</h4>
-                                <div
-                                    className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
-                                    <p className="mb-0 text-secondary fs-7">Makanan</p>
-                                    <p className="mb-0 text-primary fw-semibold">Rp. 35,000</p>
-                                </div>
-                                <button className="add-button">ADD</button>
-                            </div>
-                        </div>
+              </div>
+              <div className="col-6 col-lg-4">
+                <div className="card">
+                  <div className="card-body p-4">
+                    <img src={dish3} className="w-75 d-block mx-auto" alt="Dish 03"></img>
+                    <h4 className="card-title mt-4 mb-2">Double Burger</h4>
+                    <div
+                      className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
+                      <p className="mb-0 text-secondary fs-7">Makanan</p>
+                      <p className="mb-0 text-primary fw-semibold">Rp. 40,000</p>
                     </div>
-
-                    <div className="col-6 col-lg-4">
-                        <div className="card">
-                            <div className="card-body p-4">
-                            <img src={dish2} className="w-75 d-block mx-auto" alt="Dish 02"></img>
-                                <h4 className="card-title mt-4 mb-2">Maxi Burger</h4>
-                                <div
-                                    className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
-                                    <p className="mb-0 text-secondary fs-7">Makanan</p>
-                                    <p className="mb-0 text-primary fw-semibold">Rp. 42,000</p>
-                                </div>
-                                <button className="add-button">ADD</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-6 col-lg-4">
-                        <div className="card">
-                            <div className="card-body p-4">
-                            <img src={dish3} className="w-75 d-block mx-auto" alt="Dish 03"></img>
-                                <h4 className="card-title mt-4 mb-2">Double Burger</h4>
-                                <div
-                                    className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
-                                    <p className="mb-0 text-secondary fs-7">Makanan</p>
-                                    <p className="mb-0 text-primary fw-semibold">Rp. 40,000</p>
-                                </div>
-                                <button className="add-button">ADD</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-6 col-lg-4">
-                        <div className="card">
-                            <div className="card-body p-4">
-                            <img src={dish4} className="w-75 d-block mx-auto" alt="Dish 04"></img>
-                                <h4 className="card-title mt-4 mb-2">Raw Marbled Meat Steak</h4>
-                                <div
-                                    className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
-                                    <p className="mb-0 text-secondary fs-7">Makanan</p>
-                                    <p className="mb-0 text-primary fw-semibold">Rp. 34,000</p>
-                                </div>
-                                <button className="add-button">ADD</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-6 col-lg-4">
-                        <div className="card">
-                            <div className="card-body p-4">
-                            <img src={dish5} className="w-75 d-block mx-auto" alt="Dish 05"></img>
-                                <h4 className="card-title mt-4 mb-2">Beef Steak Grill Pan</h4>
-                                <div
-                                    className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
-                                    <p className="mb-0 text-secondary fs-7">Makanan</p>
-                                    <p className="mb-0 text-primary fw-semibold">Rp. 45,000</p>
-                                </div>
-                                <button className="add-button">ADD</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-6 col-lg-4">
-                        <div className="card">
-                            <div className="card-body p-4">
-                            <img src={dish6} className="w-75 d-block mx-auto" alt="Dish 06"></img>
-                                <h4 className="card-title mt-4 mb-2">Double Marbled Meat Steak</h4>
-                                <div
-                                    className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
-                                    <p className="mb-0 text-secondary fs-7">Makanan</p>
-                                    <p className="mb-0 text-primary fw-semibold">Rp. 45,000</p>
-                                </div>
-                                <button className="add-button">ADD</button>
-                            </div>
-                        </div>
-                    </div>
+                    <button className="add-button">ADD</button>
+                  </div>
                 </div>
-
+              </div>
+              <div className="col-6 col-lg-4">
+                <div className="card">
+                  <div className="card-body p-4">
+                    <img src={dish4} className="w-75 d-block mx-auto" alt="Dish 04"></img>
+                    <h4 className="card-title mt-4 mb-2">Raw Marbled Meat Steak</h4>
+                    <div
+                      className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
+                      <p className="mb-0 text-secondary fs-7">Makanan</p>
+                      <p className="mb-0 text-primary fw-semibold">Rp. 34,000</p>
+                    </div>
+                    <button className="add-button">ADD</button>
+                  </div>
+                </div>
+              </div>
+              <div className="col-6 col-lg-4">
+                <div className="card">
+                  <div className="card-body p-4">
+                    <img src={dish5} className="w-75 d-block mx-auto" alt="Dish 05"></img>
+                    <h4 className="card-title mt-4 mb-2">Beef Steak Grill Pan</h4>
+                    <div
+                      className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
+                      <p className="mb-0 text-secondary fs-7">Makanan</p>
+                      <p className="mb-0 text-primary fw-semibold">Rp. 45,000</p>
+                    </div>
+                    <button className="add-button">ADD</button>
+                  </div>
+                </div>
+              </div>
+              <div className="col-6 col-lg-4">
+                <div className="card">
+                  <div className="card-body p-4">
+                    <img src={dish6} className="w-75 d-block mx-auto" alt="Dish 06"></img>
+                    <h4 className="card-title mt-4 mb-2">Double Marbled Meat Steak</h4>
+                    <div
+                      className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
+                      <p className="mb-0 text-secondary fs-7">Makanan</p>
+                      <p className="mb-0 text-primary fw-semibold">Rp. 45,000</p>
+                    </div>
+                    <button className="add-button">ADD</button>
+                  </div>
+                </div>
+              </div>
+              <button className="add-button">ADD</button>
             </div>
-            <div className="col-md-5">
-                <div className="card border-0">
-                    <div className="card-body px-4">
-                        <h4 className="text-dark fw-semibold mb-3">Order #003</h4>
+            <div className="row g-3 minuman hidden" id='minuman'>
+              <h1 className="card-title mt-4 mb-2">Minuman</h1>
+              <div className="col-6 col-lg-4">
+                <div className="card">
+                  <div className="card-body p-4">
+                    <img src={dish1} className="w-75 d-block mx-auto" alt="Dish 01"></img>
+                    <h4 className="card-title mt-4 mb-2">Cheesey Chicken</h4>
+                    <div
+                      className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
+                      <p className="mb-0 text-secondary fs-7">Makanan</p>
+                      <p className="mb-0 text-primary fw-semibold">Rp. 35,000</p>
+                    </div>
+                    <button className="add-button">ADD</button>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-6 col-lg-4">
+                <div className="card">
+                  <div className="card-body p-4">
+                    <img src={dish2} className="w-75 d-block mx-auto" alt="Dish 02"></img>
+                    <h4 className="card-title mt-4 mb-2">Maxi Burger</h4>
+                    <div
+                      className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
+                      <p className="mb-0 text-secondary fs-7">Makanan</p>
+                      <p className="mb-0 text-primary fw-semibold">Rp. 42,000</p>
+                    </div>
+                    <button className="add-button">ADD</button>
+                  </div>
+                </div>
+              </div>
+              <div className="col-6 col-lg-4">
+                <div className="card">
+                  <div className="card-body p-4">
+                    <img src={dish3} className="w-75 d-block mx-auto" alt="Dish 03"></img>
+                    <h4 className="card-title mt-4 mb-2">Double Burger</h4>
+                    <div
+                      className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
+                      <p className="mb-0 text-secondary fs-7">Makanan</p>
+                      <p className="mb-0 text-primary fw-semibold">Rp. 40,000</p>
+                    </div>
+                    <button className="add-button">ADD</button>
+                  </div>
+                </div>
+              </div>
+              <div className="col-6 col-lg-4">
+                <div className="card">
+                  <div className="card-body p-4">
+                    <img src={dish4} className="w-75 d-block mx-auto" alt="Dish 04"></img>
+                    <h4 className="card-title mt-4 mb-2">Raw Marbled Meat Steak</h4>
+                    <div
+                      className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
+                      <p className="mb-0 text-secondary fs-7">Makanan</p>
+                      <p className="mb-0 text-primary fw-semibold">Rp. 34,000</p>
+                    </div>
+                    <button className="add-button">ADD</button>
+                  </div>
+                </div>
+              </div>
+              <div className="col-6 col-lg-4">
+                <div className="card">
+                  <div className="card-body p-4">
+                    <img src={dish5} className="w-75 d-block mx-auto" alt="Dish 05"></img>
+                    <h4 className="card-title mt-4 mb-2">Beef Steak Grill Pan</h4>
+                    <div
+                      className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
+                      <p className="mb-0 text-secondary fs-7">Makanan</p>
+                      <p className="mb-0 text-primary fw-semibold">Rp. 45,000</p>
+                    </div>
+                    <button className="add-button">ADD</button>
+                  </div>
+                </div>
+              </div>
+              <div className="col-6 col-lg-4">
+                <div className="card">
+                  <div className="card-body p-4">
+                    <img src={dish6} className="w-75 d-block mx-auto" alt="Dish 06"></img>
+                    <h4 className="card-title mt-4 mb-2">Double Marbled Meat Steak</h4>
+                    <div
+                      className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
+                      <p className="mb-0 text-secondary fs-7">Makanan</p>
+                      <p className="mb-0 text-primary fw-semibold">Rp. 45,000</p>
+                    </div>
+                    <button className="add-button">ADD</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="row g-3 snack hidden" id='snack'>
+              <h1 className="card-title mt-4 mb-2">Snack</h1>
+              <div className="col-6 col-lg-4">
+                <div className="card">
+                  <div className="card-body p-4">
+                    <img src={dish1} className="w-75 d-block mx-auto" alt="Dish 01"></img>
+                    <h4 className="card-title mt-4 mb-2">Cheesey Chicken</h4>
+                    <div
+                      className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
+                      <p className="mb-0 text-secondary fs-7">Makanan</p>
+                      <p className="mb-0 text-primary fw-semibold">Rp. 35,000</p>
+                    </div>
+                    <button className="add-button">ADD</button>
+                  </div>
+                </div>
+              </div>
 
               <div className="col-6 col-lg-4">
                 <div className="card">
@@ -419,9 +337,86 @@ function Checkout() {
               </div>
             </div>
           </div>
-          <Cart cItems={CartStuff} />
-        </div>
+          <div className="col-md-5">
+            <div className="card border-0">
+              <div className="card-body px-4">
+                <h4 className="text-dark fw-semibold mb-3">Order #003</h4>
 
+                <div className="col-6 col-lg-4">
+                  <div className="card">
+                    <div className="card-body p-4">
+                      <img src={dish2} className="w-75 d-block mx-auto" alt="Dish 02"></img>
+                      <h4 className="card-title mt-4 mb-2">Maxi Burger</h4>
+                      <div
+                        className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
+                        <p className="mb-0 text-secondary fs-7">Makanan</p>
+                        <p className="mb-0 text-primary fw-semibold">Rp. 42,000</p>
+                      </div>
+                      <button className="add-button">ADD</button>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-6 col-lg-4">
+                  <div className="card">
+                    <div className="card-body p-4">
+                      <img src={dish3} className="w-75 d-block mx-auto" alt="Dish 03"></img>
+                      <h4 className="card-title mt-4 mb-2">Double Burger</h4>
+                      <div
+                        className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
+                        <p className="mb-0 text-secondary fs-7">Makanan</p>
+                        <p className="mb-0 text-primary fw-semibold">Rp. 40,000</p>
+                      </div>
+                      <button className="add-button">ADD</button>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-6 col-lg-4">
+                  <div className="card">
+                    <div className="card-body p-4">
+                      <img src={dish4} className="w-75 d-block mx-auto" alt="Dish 04"></img>
+                      <h4 className="card-title mt-4 mb-2">Raw Marbled Meat Steak</h4>
+                      <div
+                        className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
+                        <p className="mb-0 text-secondary fs-7">Makanan</p>
+                        <p className="mb-0 text-primary fw-semibold">Rp. 34,000</p>
+                      </div>
+                      <button className="add-button">ADD</button>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-6 col-lg-4">
+                  <div className="card">
+                    <div className="card-body p-4">
+                      <img src={dish5} className="w-75 d-block mx-auto" alt="Dish 05"></img>
+                      <h4 className="card-title mt-4 mb-2">Beef Steak Grill Pan</h4>
+                      <div
+                        className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
+                        <p className="mb-0 text-secondary fs-7">Makanan</p>
+                        <p className="mb-0 text-primary fw-semibold">Rp. 45,000</p>
+                      </div>
+                      <button className="add-button">ADD</button>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-6 col-lg-4">
+                  <div className="card">
+                    <div className="card-body p-4">
+                      <img src={dish6} className="w-75 d-block mx-auto" alt="Dish 06"></img>
+                      <h4 className="card-title mt-4 mb-2">Double Marbled Meat Steak</h4>
+                      <div
+                        className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-1">
+                        <p className="mb-0 text-secondary fs-7">Makanan</p>
+                        <p className="mb-0 text-primary fw-semibold">Rp. 45,000</p>
+                      </div>
+                      <button className="add-button">ADD</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <Cart cItems={CartStuff} />
         <div className="modal fade" id="checkoutModal">
           <div className="modal-dialog">
             <div className="modal-content">
@@ -445,6 +440,7 @@ function Checkout() {
             </div>
           </div>
         </div>
+        <Cart cItems={CartStuff} />
       </section>
 
       <footer className="pt-5 pb-4">
