@@ -3,8 +3,9 @@ import { useState } from "react";
 import apiClient from "../utils/axios";
 import { useNavigate } from "react-router-dom";
 import { useUser } from "../hooks/useUser";
+
 export default function Login() {
-  const { setUser: setUserContext } = useUser();
+  const { setUser } = useUser();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -13,6 +14,7 @@ export default function Login() {
   const navigate = useNavigate();
 
   const handleLogin = async (e: React.FormEvent<HTMLFormElement>) => {
+    console.log("\n\n\n\n\ kontol \n\n\n\n")
     e.preventDefault();
 
     try {
@@ -20,16 +22,20 @@ export default function Login() {
       await apiClient.get("http://localhost:8000/sanctum/csrf-cookie", {
         withCredentials: true,
       });
-      const response = await apiClient.post("http://localhost:8000/api/login", {
+      const response = await apiClient.post("/login", {
         email,
         password,
       });
-      setUserContext(response.data.data);
+      setUser(response.data.data);
+      console.log("waduh", response.data.data)
       setLoading(false);
       navigate("/");
-    } catch (error) {
+
+    } catch (error: any) {
+
       console.log(error);
       setError(error.response.data.errors.message);
+
     } finally {
       setLoading(false);
     }

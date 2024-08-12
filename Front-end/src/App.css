@@ -13,7 +13,7 @@
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 a {
@@ -21,15 +21,15 @@ a {
 }
 
 .cursor-pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    color: var(--bs-primary);
-    font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--bs-primary);
+  font-weight: 700;
 }
 
 
@@ -50,11 +50,11 @@ a {
 }
 
 .logo img {
-    width: 24px;
+  width: 24px;
 }
 
 .bg-primary {
-    background-color: #4564e5;
+  background-color: #4564e5;
 }
 
 .text-primary {
@@ -70,13 +70,13 @@ a {
 }
 
 .fs-8 {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .flex-centerbetween {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .form-control:focus,
@@ -85,7 +85,8 @@ a {
   border-color: var(--bs-primary);
 }
 
-.form-control, .form-select,
+.form-control,
+.form-select,
 .btn {
   border-radius: 0.5rem;
   padding: 10px 18px;
@@ -105,15 +106,16 @@ a {
   gap: 8px;
 }
 
-.btn-quantity, .btn-delete {
-    width: 30px;
-    height: 30px;
-    background-color: var(--soft-blue);
+.btn-quantity,
+.btn-delete {
+  width: 30px;
+  height: 30px;
+  background-color: var(--soft-blue);
 }
 
 .btn-quantity:hover {
-    background-color: var(--bs-primary);
-    color: var(--white);
+  background-color: var(--bs-primary);
+  color: var(--white);
 }
 
 .btn-primary {
@@ -149,12 +151,13 @@ a {
 }
 
 .nav-pills a {
-    color: #4564e5;
+  color: #4564e5;
 }
 
-.nav-pills .active, .nav-pills a:hover {
-    background-color: #4564e5 !important;
-    color: var(--white);
+.nav-pills .active,
+.nav-pills a:hover {
+  background-color: #4564e5 !important;
+  color: var(--white);
 }
 
 .card {
@@ -168,12 +171,11 @@ a {
 }
 
 .card .card-title {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .table thead tr th {
   color: #6c757d;
   font-size: 14px;
-  font-weight: 500;
   text-transform: uppercase;
 }
